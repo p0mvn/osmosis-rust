@@ -13,7 +13,61 @@ pub struct __BindgenComplex<T> {
 }
 pub type size_t = ::std::os::raw::c_ulong;
 pub type wchar_t = ::std::os::raw::c_int;
-pub type max_align_t = f64;
+#[repr(C)]
+#[repr(align(16))]
+#[derive(Debug, Copy, Clone)]
+pub struct max_align_t {
+    pub __clang_max_align_nonce1: ::std::os::raw::c_longlong,
+    pub __bindgen_padding_0: u64,
+    pub __clang_max_align_nonce2: u128,
+}
+#[test]
+fn bindgen_test_layout_max_align_t() {
+    assert_eq!(
+        ::std::mem::size_of::<max_align_t>(),
+        32usize,
+        concat!("Size of: ", stringify!(max_align_t))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<max_align_t>(),
+        16usize,
+        concat!("Alignment of ", stringify!(max_align_t))
+    );
+    fn test_field___clang_max_align_nonce1() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<max_align_t>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).__clang_max_align_nonce1) as usize - ptr as usize
+            },
+            0usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(max_align_t),
+                "::",
+                stringify!(__clang_max_align_nonce1)
+            )
+        );
+    }
+    test_field___clang_max_align_nonce1();
+    fn test_field___clang_max_align_nonce2() {
+        assert_eq!(
+            unsafe {
+                let uninit = ::std::mem::MaybeUninit::<max_align_t>::uninit();
+                let ptr = uninit.as_ptr();
+                ::std::ptr::addr_of!((*ptr).__clang_max_align_nonce2) as usize - ptr as usize
+            },
+            16usize,
+            concat!(
+                "Offset of field: ",
+                stringify!(max_align_t),
+                "::",
+                stringify!(__clang_max_align_nonce2)
+            )
+        );
+    }
+    test_field___clang_max_align_nonce2();
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct _GoString_ {
@@ -77,7 +131,7 @@ pub type GoInt64 = ::std::os::raw::c_longlong;
 pub type GoUint64 = ::std::os::raw::c_ulonglong;
 pub type GoInt = GoInt64;
 pub type GoUint = GoUint64;
-pub type GoUintptr = size_t;
+pub type GoUintptr = ::std::os::raw::c_ulong;
 pub type GoFloat32 = f32;
 pub type GoFloat64 = f64;
 pub type GoComplex64 = __BindgenComplex<f32>;
