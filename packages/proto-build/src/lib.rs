@@ -53,12 +53,21 @@ pub fn run() {
         project_dir: COSMOS_SDK_DIR.to_string(),
     };
 
-    let osmosis_code_generator = CodeGenerator::new(
-        out_dir,
-        tmp_build_dir,
-        osmosis_project,
-        vec![cosmos_project],
+    let cosmos_code_generator = CodeGenerator::new(
+        out_dir.clone(),
+        tmp_build_dir.clone(),
+        cosmos_project.clone(),
+        vec![],
     );
 
-    osmosis_code_generator.generate();
+    cosmos_code_generator.generate();
+
+    // let osmosis_code_generator = CodeGenerator::new(
+    //     out_dir,
+    //     tmp_build_dir,
+    //     osmosis_project,
+    //     vec![cosmos_project],
+    // );
+
+    // osmosis_code_generator.generate();
 }

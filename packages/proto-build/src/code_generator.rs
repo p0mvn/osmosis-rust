@@ -12,6 +12,7 @@ use crate::{mod_gen, transform};
 
 const DESCRIPTOR_FILE: &str = "descriptor.bin";
 
+#[derive(Clone)]
 pub struct CosmosProject {
     pub name: String,
     pub version: String,
