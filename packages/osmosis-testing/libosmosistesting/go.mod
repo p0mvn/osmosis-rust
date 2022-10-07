@@ -16,7 +16,7 @@ replace (
 	// use cosmos-compatible protobufs
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
-	github.com/osmosis-labs/osmosis/v12 => github.com/p0mvn/osmosis/v12 v12.0.0-merkle-v1
+	github.com/osmosis-labs/osmosis/v12 => github.com/p0mvn/osmosis/v12 v12.0.0-merkle-v2
 	// use grpc compatible with cosmos protobufs
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
