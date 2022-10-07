@@ -226,6 +226,8 @@ macro_rules! expand_as_any {
                     Err(serde::de::Error::custom("data must have map structure"))
                 }?;
 
+                let type_url_clone = type_url.clone();
+
                 match type_url {
                     // @type found
                     Some(t) => {
@@ -261,8 +263,14 @@ macro_rules! expand_as_any {
                     }
                 };
 
+                let mut type_url_format = String::from("");
+
+                if type_url_clone.is_some() {
+                    type_url_format = type_url_clone.unwrap();
+                }
+
                 Err(serde::de::Error::custom(
-                    "data did not match any type that supports deserialization as `Any`",
+                    format!("data did not match any type that supports deserialization as `Any`, type_url: {}", &type_url_format),
                 ))
             }
         }
@@ -290,6 +298,8 @@ expand_as_any!(
     // balancer pool param has more fields
     crate::types::osmosis::gamm::v1beta1::PoolParams,
     crate::types::osmosis::gamm::poolmodels::stableswap::v1beta1::PoolParams,
+
+    crate::types::cosmos::authz::v1beta1::GenericAuthorization,
 );
 
 macro_rules! impl_prost_types_exact_conversion {
