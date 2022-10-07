@@ -653,11 +653,11 @@ github.com/osmosis-labs/cosmos-sdk v0.45.1-0.20220921135931-3c4d30596acc h1:WPsg
 github.com/osmosis-labs/cosmos-sdk v0.45.1-0.20220921135931-3c4d30596acc/go.mod h1:uUkGXyCWol+CHoaMxZA0nKglvlN5uHBCMbMSsZoGSAs=
 github.com/osmosis-labs/iavl v0.17.3-osmo-v7 h1:6KcADC/WhL7yDmNQxUIJt2XmzNt4FfRmq9gRke45w74=
 github.com/osmosis-labs/iavl v0.17.3-osmo-v7/go.mod h1:lJEOIlsd3sVO0JDyXWIXa9/Ur5FBscP26zJx0KxHjto=
-github.com/osmosis-labs/osmosis/v12 v12.0.0 h1:2I0NVpMvQKxzQvrfdE9hDR9v7IQxSH3TE9rIOz3BwuQ=
-github.com/osmosis-labs/osmosis/v12 v12.0.0/go.mod h1:fvcSb7uUM+NoDezBKUCM564hAw1LXVIuT6nXv9z3DJ0=
 github.com/osmosis-labs/wasmd v0.28.0-osmo-v12.1 h1:CZJSa65banZjQNyDhp+nGPr9MRYrIfOU/aO3ww2V1Rg=
 github.com/osmosis-labs/wasmd v0.28.0-osmo-v12.1/go.mod h1:7YWBfoD6zPuu6pmqnq/kMNpc+xqOaxEtolJ5/7xHzB8=
 github.com/otiai10/copy v1.7.0 h1:hVoPiN+t+7d2nzzwMiDHPSOogsWAStewq3TwU05+clE=
+github.com/p0mvn/osmosis/v12 v12.0.0-merkle-v1 h1:Njfzn+oQhZ3uXwPvHshZrFGih7gLI6u/zxBCeOVfODU=
+github.com/p0mvn/osmosis/v12 v12.0.0-merkle-v1/go.mod h1:21l4NGyBkotHQaKcMGfIhFWgfCtTyuWNzBl1dQybm5Q=
 github.com/pact-foundation/pact-go v1.0.4/go.mod h1:uExwJY4kCzNPcHRj+hCR/HBbOOIwwtUjcrb0b5/5kLM=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pascaldekloe/goe v0.1.0 h1:cBOtyMzM9HTpWjXfbbunk26uA6nG3a8n06Wieeh0MwY=

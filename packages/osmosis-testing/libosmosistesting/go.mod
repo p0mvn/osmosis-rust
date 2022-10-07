@@ -1,6 +1,6 @@
 module github.com/osmosis-labs/osmosis-rust/osmosis-testing
 
-go 1.19
+go 1.18
 
 replace (
 	// branch: v0.28.0x-osmo-v12, current tag: v0.28.0-osmo-v12.1
@@ -15,6 +15,8 @@ replace (
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
 	// use cosmos-compatible protobufs
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+
+	github.com/osmosis-labs/osmosis/v12 => github.com/p0mvn/osmosis/v12 v12.0.0-merkle-v1
 	// use grpc compatible with cosmos protobufs
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
