@@ -300,6 +300,7 @@ expand_as_any!(
     crate::types::osmosis::gamm::poolmodels::stableswap::v1beta1::PoolParams,
 
     crate::types::cosmos::authz::v1beta1::GenericAuthorization,
+    crate::types::cosmos::bank::v1beta1::SendAuthorization,
     crate::types::osmosis::tokenfactory::v1beta1::MsgMint,
 );
 
