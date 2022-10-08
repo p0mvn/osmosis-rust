@@ -301,6 +301,7 @@ expand_as_any!(
 
     crate::types::cosmos::authz::v1beta1::GenericAuthorization,
     crate::types::cosmos::bank::v1beta1::SendAuthorization,
+    crate::types::cosmos::bank::v1beta1::MsgSend,
     crate::types::osmosis::tokenfactory::v1beta1::MsgMint,
 );
 
